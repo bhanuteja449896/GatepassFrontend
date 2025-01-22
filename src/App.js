@@ -18,7 +18,7 @@ function App() {
         throw new Error(`HTTP error! Status: ${response.status}`);
       }
   
-      const data = await response.json();
+      const data = await response.json(); 
   
       // Log the parsed data
       console.log('Parsed Data:', data);
