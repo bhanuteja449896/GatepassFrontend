@@ -1,70 +1,30 @@
-.App {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  min-height: 100vh;
-  background: linear-gradient(135deg, #0093e9, #80d0c7);
-  font-family: 'Arial', sans-serif;
-}
-
-.login-card {
-  background: #ffffff;
-  padding: 30px;
-  border-radius: 8px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-  width: 350px;
-  text-align: center;
-}
-
-.login-card h2 {
-  margin-bottom: 20px;
-  color: #333;
-}
-
-.login-input-group {
-  margin-bottom: 15px;
-  text-align: left;
-}
-
-.login-input-group label {
-  display: block;
-  margin-bottom: 5px;
-  font-size: 14px;
-  color: #666;
-}
-
-.login-input-group input {
-  width: 100%;
-  padding: 10px;
+.login-container {
+  max-width: 400px;
+  margin: 50px auto;
+  padding: 20px;
   border: 1px solid #ddd;
   border-radius: 5px;
-  font-size: 14px;
 }
 
-.login-input-group input:focus {
-  outline: none;
-  border-color: #0093e9;
+.dashboard-container {
+  text-align: center;
+  margin-top: 50px;
 }
 
-.login-btn {
+input {
   width: 100%;
   padding: 10px;
-  background-color: #0093e9;
-  color: #fff;
-  font-size: 16px;
+  margin: 10px 0;
+}
+
+button {
+  padding: 10px 20px;
+  background-color: blue;
+  color: white;
   border: none;
-  border-radius: 5px;
   cursor: pointer;
-  transition: background-color 0.3s ease;
 }
 
-.login-btn:hover {
-  background-color: #007bbd;
-}
-
-.login-message {
-  margin-top: 20px;
-  font-size: 16px;
-  font-weight: bold;
-  color: #333;
+button:hover {
+  background-color: darkblue;
 }
