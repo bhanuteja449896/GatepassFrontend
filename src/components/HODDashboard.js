@@ -1,34 +1,11 @@
 import React from "react";
-import { useLocation } from "react-router-dom";
+import "./HODDashboard.css";
 
 const HODDashboard = () => {
-  const location = useLocation();
-  const { state } = location;
-
-  if (!state) {
-    return <p>Error: No user data found. Please log in again.</p>;
-  }
-
-  const { username, name, gmail, mobile } = state;
-
   return (
-    <div>
-      <h2>Welcome to HOD Dashboard</h2>
-      <div>
-        <h3>HOD Details:</h3>
-        <p>
-          <strong>Username:</strong> {username}
-        </p>
-        <p>
-          <strong>Name:</strong> {name}
-        </p>
-        <p>
-          <strong>Gmail:</strong> {gmail}
-        </p>
-        <p>
-          <strong>Mobile:</strong> {mobile}
-        </p>
-      </div>
+    <div className="p-6">
+      <h1 className="text-2xl font-bold mb-4">HOD Dashboard</h1>
+      <p>Accept or reject requests, and check history here.</p>
     </div>
   );
 };
